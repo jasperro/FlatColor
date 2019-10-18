@@ -1,0 +1,40 @@
+/*********
+ * entry *
+ *********/
+entry {
+    padding: 6px 8px;
+    background-color: @base_color;
+    background-image: none;
+    color: @text_color;
+    box-shadow: initial;
+    box-shadow:inset 0px -1px 0px 0px @color2;
+    border-radius: 2px;
+}
+
+entry:active,
+entry:focus {
+    border-color: @selected_bg_color;
+    box-shadow: inset 0px -2px 0px 0px @color12;
+    background-color: @base_color;
+}
+
+entry:selected,
+entry:selected:focus,
+entry selection {
+    background-color: @selected_bg_color;
+    color: @selected_fg_color;
+}
+
+entry:disabled {
+    background-color: shade(@bg_color, 1.04);
+    background-image: none;
+    color: mix(@text_color, @base_color, 0.4);
+}
+
+entry.progressbar {
+    border-width: 0;
+    border-radius: 0;
+    background-color: @selected_bg_color;
+    background-image: none;
+    color: @selected_fg_color;
+}

@@ -1,0 +1,219 @@
+/*************
+ * Notebooks *
+ *************/
+ 
+
+notebook > header {
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.1);
+    background-color: @bg_color;
+    background-clip: border-box;
+}
+
+/* Notebook tabs */
+
+notebook > header.top {
+    border-bottom-style: solid;
+}
+notebook > header.top > tabs > tab:not(.reorderable-page) {
+    border-bottom: 2px solid transparent;
+    border-radius: 6px 6px 0 0;
+}
+notebook > header.top > tabs > tab:not(.reorderable-page):hover {
+    border-bottom: 2px solid shade( @tooltip_bg_color, 0.70)
+}
+notebook > header.top > tabs > tab:not(.reorderable-page):checked {
+    border-bottom: 2px solid @selected_bg_color;
+}
+notebook > header.bottom {
+    border-top-style: solid;
+}
+notebook > header.bottom > tabs > tab:not(.reorderable-page) {
+    border-top: 2px solid transparent;
+    border-radius: 0 0 6px 6px;
+}
+notebook > header.bottom > tabs > tab:not(.reorderable-page):hover {
+    border-top: 2px solid shade( @tooltip_bg_color, 0.70);
+}
+notebook > header.bottom > tabs > tab:not(.reorderable-page):checked {
+    border-top: 2px solid @selected_bg_color;
+}
+notebook > header.left {
+    border-right-style: solid;
+}
+notebook > header.left > tabs > tab:not(.reorderable-page) {
+    border-right: 2px solid transparent;
+    border-radius: 6px 0 0 6px;
+}
+notebook > header.left > tabs > tab:not(.reorderable-page):hover {
+    border-right: 2px solid shade( @tooltip_bg_color, 0.70);
+}
+notebook > header.left > tabs > tab:not(.reorderable-page):checked {
+    border-right: 2px solid @selected_bg_color;
+}
+notebook > header.right {
+    border-left-style: solid;
+}
+notebook > header.right > tabs > tab:not(.reorderable-page) {
+    border-left: 2px solid transparent;
+    border-radius: 0 6px 6px 0;
+}
+notebook > header.right > tabs > tab:not(.reorderable-page):hover {
+    border-left: 2px solid shade( @tooltip_bg_color, 0.70);
+}
+notebook > header.right > tabs > tab:not(.reorderable-page):checked {
+    border-left: 2px solid @selected_bg_color;
+}
+
+
+
+notebook > header.top > tabs > arrow {
+    border-top-style: none;
+}
+notebook > header.bottom > tabs > arrow {
+    border-bottom-style: none;
+}
+notebook > header.top > tabs > arrow,
+notebook > header.bottom > tabs > arrow {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+notebook > header.top > tabs > arrow.down,
+notebook > header.bottom > tabs > arrow.down {
+    margin-left: -8px;
+    -gtk-icon-source: -gtk-icontheme("pan-start-symbolic");
+}
+notebook > header.top > tabs > arrow.up,
+notebook > header.bottom > tabs > arrow.up {
+    margin-right: -8px;
+    -gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
+}
+notebook > header.left > tabs > arrow {
+    border-left-style: none;
+}
+notebook > header.right > tabs > arrow {
+    border-right-style: none;
+}
+notebook > header.left > tabs > arrow,
+notebook > header.right > tabs > arrow {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+notebook > header.left > tabs > arrow.down,
+notebook > header.right > tabs > arrow.down {
+    margin-top: -8px;
+    -gtk-icon-source: -gtk-icontheme("pan-up-symbolic");
+}
+notebook > header.left > tabs > arrow.up,
+notebook > header.right > tabs > arrow.up {
+    margin-bottom: -8px;
+    -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
+}
+notebook > header > tabs > arrow {
+    min-height: 16px;
+    min-width: 16px;
+    border-radius: 0;
+}
+
+
+
+notebook > header tab {
+    transition: all 100ms cubic-bezier(0, 0, 0.2, 1), background-size 0, background-image 0;
+    min-height: 24px;
+    min-width: 24px;
+    padding: 6px 12px;
+    outline-offset: -6px;
+    border-width: 1px;
+    border-color: transparent;
+    background-image: radial-gradient(circle farthest-corner at center, alpha(currentColor, 0.12) 10%, transparent 0%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 0% 0%;
+    color: @selected_fg_color;
+    font-weight: 500;
+}
+
+notebook > header tab:hover {
+    color: @selected_fg_color;
+}
+notebook > header tab:hover.reorderable-page {
+    border-bottom: 2px solid @selected_bg_color;
+}
+notebook > header tab:disabled {
+    color: @selected_fg_color;
+}
+notebook > header tab:checked {
+    color: @selected_fg_color;
+    transition: all 100ms cubic-bezier(0, 0, 0.2, 1), background-size 100ms cubic-bezier(0, 0, 0.2, 1), background-image 400ms cubic-bezier(0, 0, 0.2, 1);
+    background-image: radial-gradient(circle farthest-corner at center, transparent 10%, transparent 0%);
+    background-size: 1000% 1000%;
+}
+notebook > header tab:checked:disabled {
+    color: @selected_fg_color;
+}
+notebook > header tab:checked:not(.reorderable-page) {
+    animation: tab_ripple_effect 0.6s ease-in-out;
+}
+notebook > header tab:checked.reorderable-page {
+    border-bottom: 2px solid @selected_bg_color;
+}
+notebook > header tab button.flat {
+    min-width: 24px;
+    min-height: 24px;
+    padding: 0;
+}
+notebook > header tab button.flat:last-child {
+    margin-left: 6px;
+    margin-right: -6px;
+}
+notebook > header tab button.flat:first-child {
+    margin-left: -6px;
+    margin-right: 6px;
+}
+notebook > header.top tabs,
+notebook > header.bottom tabs {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+notebook > header.top tabs:not(:only-child):first-child,
+notebook > header.bottom tabs:not(:only-child):first-child {
+    margin-left: 0;
+}
+notebook > header.top tabs:not(:only-child):last-child,
+notebook > header.bottom tabs:not(:only-child):last-child {
+    margin-right: 0;
+}
+notebook > header.top tabs tab.reorderable-page,
+notebook > header.bottom tabs tab.reorderable-page {
+    margin: 0 -1px;
+    border-style: none solid;
+}
+notebook > header.left tabs,
+notebook > header.right tabs {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+entry.chrome {
+    background-color: blue;
+}
+notebook > header.left tabs:not(:only-child):first-child,
+notebook > header.right tabs:not(:only-child):first-child {
+    margin-top: 0;
+}
+notebook > header.left tabs:not(:only-child):last-child,
+notebook > header.right tabs:not(:only-child):last-child {
+    margin-bottom: 0;
+}
+notebook > header.left tabs tab.reorderable-page,
+notebook > header.right tabs tab.reorderable-page {
+    margin: -1px 0;
+    border-style: solid none;
+}
+notebook > stack:not(:only-child) {
+    background-color: @tooltip_bg_color;
+}
+
+notebook > stack {
+    background-color: @tooltip_bg_color;
+}
+/*aqui esta lo que debe modificars*/

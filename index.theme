@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=PlatColor
+Comment=Theme made for wpgtk
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=PlatColor
+MetacityTheme=PlatColor
+ButtonLayout=:minimize,maximize,close
+IconTheme=gnome
