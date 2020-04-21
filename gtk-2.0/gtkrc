@@ -1,6 +1,5 @@
 #modded Numix gtkrc
 
-<<<<<<< HEAD
 gtk-color-scheme = "bg_color:#3d333d
 color0:#2a232a
 color1:#BFC2B5
@@ -28,44 +27,11 @@ titlebar_fg_color:#eafef3
 menu_bg_color:#3d333d
 menu_fg_color:#eafef3
 link_color:#87afaf"
-=======
-gtk-color-scheme = "bg_color:#221e17
-color0:#221e17
-color1:#96c5bc
-color2:#0facaa
-color3:#ab9a77
-color4:#72c3bc
-color5:#b6c6b9
-color6:#45c2bf
-color7:#c7c6c5
-color8:#40382b
-color9:#acffff
-color10:#07ebe8
-color11:#f1ce87
-color12:#80ffff
-color13:#d3ffe1
-color14:#48ffff
-color15:#fffffd
-text_color:#fffffd
-selected_bg_color:#39cbcb
-selected_fg_color:#fffffd
-tooltip_bg_color:#221e17
-tooltip_fg_color:#fffffd
-titlebar_bg_color:#221e17
-titlebar_fg_color:#fffffd
-menu_bg_color:#221e17
-menu_fg_color:#fffffd
-link_color:#39cbcb"
->>>>>>> f76ef18a615e1b38089343bf38ebe005b6bd12c8
 gtk-auto-mnemonics	= 1
 
 # Default Style
 # DO --NOT-- CHANGE ACTIVE
-<<<<<<< HEAD
 # IT's THE COLOR THAT WPGTK c3fefeES
-=======
-# IT's THE COLOR THAT WPGTK REPLACES
->>>>>>> f76ef18a615e1b38089343bf38ebe005b6bd12c8
 # FEEL FREE TO MODIFY EVERYTHING ELSE IN gtkrc.base
 
 style "murrine-default" {
@@ -165,7 +131,6 @@ style "murrine-default" {
 	fg[ACTIVE] = @text_color
 	fg[INSENSITIVE] = mix (0.5, @bg_color, @text_color)
 
-<<<<<<< HEAD
 	bg[NORMAL] = shade(1.10, @bg_color)
 	bg[PRELIGHT] = shade (1.02, @bg_color)
 	bg[SELECTED] = @selected_bg_color
@@ -177,19 +142,6 @@ style "murrine-default" {
 	base[SELECTED] = @selected_bg_color
 	base[ACTIVE] = @selected_bg_color
 	base[INSENSITIVE] = shade (0.80, @bg_color)
-=======
-	bg[NORMAL] = @bg_color
-	bg[PRELIGHT] = shade (1.02, @bg_color)
-	bg[SELECTED] = @selected_bg_color
-	bg[ACTIVE] = @bg_color
-	bg[INSENSITIVE] = @bg_color
-
-	base[NORMAL] = shade(0.85, @color0)
-	base[PRELIGHT] = shade (0.85, @color0)
-	base[SELECTED] = @selected_bg_color
-	base[ACTIVE] = @selected_bg_color
-	base[INSENSITIVE] = shade (0.85, @bg_color)
->>>>>>> f76ef18a615e1b38089343bf38ebe005b6bd12c8
 
 	text[NORMAL] = @text_color
 	text[PRELIGHT] = @text_color
@@ -218,11 +170,7 @@ style "murrine-default" {
 		menubarstyle = 0 # 0 = flat, 1 = glassy, 2 = gradient, 3 = striped
 		menuitemstyle = 0 # 0 = flat, 1 = glassy, 2 = striped
 		menustyle = 0 # 0 = none, 1 = vertical striped
-<<<<<<< HEAD
 		progressbarstyle = 1 # 0 = none, 1 = diagonal striped, 2 = vertical striped
-=======
-		progressbarstyle = 0 # 0 = none, 1 = diagonal striped, 2 = vertical striped
->>>>>>> f76ef18a615e1b38089343bf38ebe005b6bd12c8
 		reliefstyle = 0 # 0 = flat, 1 = inset, 2 = shadow, 3 = shadow with gradient, 4 = stronger shadow with gradient
 		roundness = 0 # roundness of widgets
 		scrollbarstyle = 0 # 0 = none, 1 = circles, 2 = handles, 3 = diagonal stripes, 4 = diagonal stripes and handles, 5 = horizontal stripes, 6 = horizontal stripes and handles
@@ -266,13 +214,8 @@ style "murrine-notebook" = "murrine-notebook-bg" {
 # Various Standard Widgets
 
 style "murrine-button"  = "murrine-wider" {
-<<<<<<< HEAD
 	bg[NORMAL] = shade (1.58, @bg_color)
 	bg[PRELIGHT] = shade (1.35, @bg_color)
-=======
-	bg[NORMAL] = shade (1.3, @bg_color)
-	bg[PRELIGHT] = shade (0.80, @selected_bg_color)
->>>>>>> f76ef18a615e1b38089343bf38ebe005b6bd12c8
 	bg[ACTIVE] = shade (1.00, @selected_bg_color)
 	bg[INSENSITIVE] = shade (0.85, @bg_color)
 
@@ -387,11 +330,7 @@ style "metacity-frame" = "murrine-default" {
 }
 
 style "murrine-statusbar" { 
-<<<<<<< HEAD
   bg[NORMAL] = shade(1.10, @bg_color)
-=======
-  bg[NORMAL] = @bg_color
->>>>>>> f76ef18a615e1b38089343bf38ebe005b6bd12c8
 }
 style "murrine-comboboxentry" = "murrine-entry" { }
 style "murrine-hscale" = "murrine-scale" { }
@@ -402,11 +341,7 @@ style "murrine-vscrollbar" = "murrine-scrollbar" { }
 # Menus
 
 style "murrine-menu" = "murrine-thin" {
-<<<<<<< HEAD
 	bg[NORMAL] = @menu_bg_color
-=======
-	bg[NORMAL] = shade(0.8, @menu_bg_color)
->>>>>>> f76ef18a615e1b38089343bf38ebe005b6bd12c8
 	bg[PRELIGHT] = @selected_bg_color
 	bg[SELECTED] = @selected_bg_color
 	bg[ACTIVE] = @menu_bg_color
@@ -670,15 +605,9 @@ class "*Xfce*Panel*" style "murrine-panel"
 # Thunar Styles
 
 style "sidepane" {
-<<<<<<< HEAD
 	base[NORMAL] = shade(1.10, @bg_color)
 	base[INSENSITIVE] = shade(0.90, @bg_color)
 	bg[NORMAL] = shade(1.05, @bg_color)
-=======
-	base[NORMAL] = @bg_color
-	base[INSENSITIVE] = shade(0.90, @bg_color)
-	bg[NORMAL] = @bg_color
->>>>>>> f76ef18a615e1b38089343bf38ebe005b6bd12c8
 	text[NORMAL] = @text_color
 }
 
