@@ -1,6 +1,10 @@
 /*************
  * Notebooks *
  *************/
+<<<<<<< HEAD
+=======
+ 
+>>>>>>> f76ef18a615e1b38089343bf38ebe005b6bd12c8
 
 notebook > header {
     border-width: 1px;
@@ -8,10 +12,17 @@ notebook > header {
     background-color: @bg_color;
     background-clip: border-box;
 }
+<<<<<<< HEAD
+=======
+
+/* Notebook tabs */
+
+>>>>>>> f76ef18a615e1b38089343bf38ebe005b6bd12c8
 notebook > header.top {
     border-bottom-style: solid;
 }
 notebook > header.top > tabs > tab:not(.reorderable-page) {
+<<<<<<< HEAD
     margin-bottom: -1px;
 }
 notebook > header.top > tabs > tab:not(.reorderable-page):hover {
@@ -19,11 +30,22 @@ notebook > header.top > tabs > tab:not(.reorderable-page):hover {
 }
 notebook > header.top > tabs > tab:not(.reorderable-page):checked {
     background-color: @tooltip_bg_color;
+=======
+    border-bottom: 2px solid transparent;
+    border-radius: 6px 6px 0 0;
+}
+notebook > header.top > tabs > tab:not(.reorderable-page):hover {
+    border-bottom: 2px solid shade( @tooltip_bg_color, 0.70)
+}
+notebook > header.top > tabs > tab:not(.reorderable-page):checked {
+    border-bottom: 2px solid @selected_bg_color;
+>>>>>>> f76ef18a615e1b38089343bf38ebe005b6bd12c8
 }
 notebook > header.bottom {
     border-top-style: solid;
 }
 notebook > header.bottom > tabs > tab:not(.reorderable-page) {
+<<<<<<< HEAD
     margin-top: -1px;
 }
 notebook > header.bottom > tabs > tab:not(.reorderable-page):hover {
@@ -31,11 +53,22 @@ notebook > header.bottom > tabs > tab:not(.reorderable-page):hover {
 }
 notebook > header.bottom > tabs > tab:not(.reorderable-page):checked {
     background-color: @tooltip_bg_color;
+=======
+    border-top: 2px solid transparent;
+    border-radius: 0 0 6px 6px;
+}
+notebook > header.bottom > tabs > tab:not(.reorderable-page):hover {
+    border-top: 2px solid shade( @tooltip_bg_color, 0.70);
+}
+notebook > header.bottom > tabs > tab:not(.reorderable-page):checked {
+    border-top: 2px solid @selected_bg_color;
+>>>>>>> f76ef18a615e1b38089343bf38ebe005b6bd12c8
 }
 notebook > header.left {
     border-right-style: solid;
 }
 notebook > header.left > tabs > tab:not(.reorderable-page) {
+<<<<<<< HEAD
     margin-right: -1px;
 }
 notebook > header.left > tabs > tab:not(.reorderable-page):hover {
@@ -43,11 +76,22 @@ notebook > header.left > tabs > tab:not(.reorderable-page):hover {
 }
 notebook > header.left > tabs > tab:not(.reorderable-page):checked {
     background-color: @tooltip_bg_color;
+=======
+    border-right: 2px solid transparent;
+    border-radius: 6px 0 0 6px;
+}
+notebook > header.left > tabs > tab:not(.reorderable-page):hover {
+    border-right: 2px solid shade( @tooltip_bg_color, 0.70);
+}
+notebook > header.left > tabs > tab:not(.reorderable-page):checked {
+    border-right: 2px solid @selected_bg_color;
+>>>>>>> f76ef18a615e1b38089343bf38ebe005b6bd12c8
 }
 notebook > header.right {
     border-left-style: solid;
 }
 notebook > header.right > tabs > tab:not(.reorderable-page) {
+<<<<<<< HEAD
     margin-left: -1px;
 }
 notebook > header.right > tabs > tab:not(.reorderable-page):hover {
@@ -56,6 +100,20 @@ notebook > header.right > tabs > tab:not(.reorderable-page):hover {
 notebook > header.right > tabs > tab:not(.reorderable-page):checked {
     background-color: @tooltip_bg_color;
 }
+=======
+    border-left: 2px solid transparent;
+    border-radius: 0 6px 6px 0;
+}
+notebook > header.right > tabs > tab:not(.reorderable-page):hover {
+    border-left: 2px solid shade( @tooltip_bg_color, 0.70);
+}
+notebook > header.right > tabs > tab:not(.reorderable-page):checked {
+    border-left: 2px solid @selected_bg_color;
+}
+
+
+
+>>>>>>> f76ef18a615e1b38089343bf38ebe005b6bd12c8
 notebook > header.top > tabs > arrow {
     border-top-style: none;
 }
@@ -103,14 +161,29 @@ notebook > header > tabs > arrow {
     min-width: 16px;
     border-radius: 0;
 }
+<<<<<<< HEAD
 notebook > header tab {
     transition: all 0.3s cubic-bezier(0, 0, 0.2, 1), color 0;
+=======
+
+
+
+notebook > header tab {
+    transition: all 100ms cubic-bezier(0, 0, 0.2, 1), background-size 0, background-image 0;
+>>>>>>> f76ef18a615e1b38089343bf38ebe005b6bd12c8
     min-height: 24px;
     min-width: 24px;
     padding: 6px 12px;
     outline-offset: -6px;
     border-width: 1px;
     border-color: transparent;
+<<<<<<< HEAD
+=======
+    background-image: radial-gradient(circle farthest-corner at center, alpha(currentColor, 0.12) 10%, transparent 0%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 0% 0%;
+>>>>>>> f76ef18a615e1b38089343bf38ebe005b6bd12c8
     color: @selected_fg_color;
     font-weight: 500;
 }
@@ -119,14 +192,24 @@ notebook > header tab:hover {
     color: @selected_fg_color;
 }
 notebook > header tab:hover.reorderable-page {
+<<<<<<< HEAD
     border-color: @selected_bg_color;
     background-color: @tooltip_bg_color;
+=======
+    border-bottom: 2px solid @selected_bg_color;
+>>>>>>> f76ef18a615e1b38089343bf38ebe005b6bd12c8
 }
 notebook > header tab:disabled {
     color: @selected_fg_color;
 }
 notebook > header tab:checked {
     color: @selected_fg_color;
+<<<<<<< HEAD
+=======
+    transition: all 100ms cubic-bezier(0, 0, 0.2, 1), background-size 100ms cubic-bezier(0, 0, 0.2, 1), background-image 400ms cubic-bezier(0, 0, 0.2, 1);
+    background-image: radial-gradient(circle farthest-corner at center, transparent 10%, transparent 0%);
+    background-size: 1000% 1000%;
+>>>>>>> f76ef18a615e1b38089343bf38ebe005b6bd12c8
 }
 notebook > header tab:checked:disabled {
     color: @selected_fg_color;
@@ -135,8 +218,12 @@ notebook > header tab:checked:not(.reorderable-page) {
     animation: tab_ripple_effect 0.6s ease-in-out;
 }
 notebook > header tab:checked.reorderable-page {
+<<<<<<< HEAD
     border-color: rgba(0, 0, 0, 0.1);
     background-color: @tooltip_bg_color;
+=======
+    border-bottom: 2px solid @selected_bg_color;
+>>>>>>> f76ef18a615e1b38089343bf38ebe005b6bd12c8
 }
 notebook > header tab button.flat {
     min-width: 24px;

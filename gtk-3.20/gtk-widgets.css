@@ -1,6 +1,14 @@
 /* NOTES to contributors:
  * use 4 spaces indents, and keep code ALIGNED and ORDERED */
 /* default */
+<<<<<<< HEAD
+=======
+ @keyframes ripple_effect {
+    to {
+      background-size: 1000% 1000%;
+    }
+  }
+>>>>>>> f76ef18a615e1b38089343bf38ebe005b6bd12c8
 
 * {
     background-clip: padding-box;

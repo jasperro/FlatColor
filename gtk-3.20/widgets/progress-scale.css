@@ -5,6 +5,10 @@
 progressbar {
     color: @selected_fg_color;
     font-size: smaller;
+<<<<<<< HEAD
+=======
+    border-radius: 6px;
+>>>>>>> f76ef18a615e1b38089343bf38ebe005b6bd12c8
 }
 progressbar.horizontal trough,
 progressbar.horizontal progress {
@@ -16,9 +20,17 @@ progressbar.vertical progress {
 }
 progressbar trough {
     background-color: shade( @bg_color, 0.8);
+<<<<<<< HEAD
 }
 progressbar progress {
     background-color: @selected_bg_color;
+=======
+    border-radius: 6px;
+}
+progressbar progress {
+    background-color: @selected_bg_color;
+    border-radius: 6px;
+>>>>>>> f76ef18a615e1b38089343bf38ebe005b6bd12c8
 }
 /*************
  * Level Bar *
@@ -27,6 +39,10 @@ progressbar progress {
 levelbar block {
     min-width: 36px;
     min-height: 4px;
+<<<<<<< HEAD
+=======
+    border-radius: 6px;
+>>>>>>> f76ef18a615e1b38089343bf38ebe005b6bd12c8
 }
 levelbar.vertical block {
     min-width: 4px;
@@ -34,7 +50,11 @@ levelbar.vertical block {
 }
 levelbar trough {
     padding: 2px;
+<<<<<<< HEAD
     border-radius: 2px;
+=======
+    border-radius: 6px;
+>>>>>>> f76ef18a615e1b38089343bf38ebe005b6bd12c8
     transition: all 0.3s cubic-bezier(0, 0, 0.2, 1), color 0;
     border-image: none;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -77,9 +97,17 @@ scale {
     min-height: 12px;
     min-width: 12px;
     padding: 12px;
+<<<<<<< HEAD
 }
 scale * {
     transition: all 0.3s cubic-bezier(0, 0, 0.2, 1), color 0;
+=======
+    border-radius: 6px;
+}
+scale * {
+    transition: all 0.3s cubic-bezier(0, 0, 0.2, 1), color 0;
+    border-radius: 6px;
+>>>>>>> f76ef18a615e1b38089343bf38ebe005b6bd12c8
 }
 scale slider {
     min-height: 24px;
@@ -89,6 +117,10 @@ scale slider {
 scale trough {
     outline-offset: 2px;
     background-color: alpha(@selected_bg_color, 0.3);
+<<<<<<< HEAD
+=======
+    border-radius: 6px;
+>>>>>>> f76ef18a615e1b38089343bf38ebe005b6bd12c8
 }
 scale trough:disabled {
     color: rgba(0, 0, 0, 0.32);
@@ -127,9 +159,17 @@ scale.fine-tune slider {
 }
 scale value {
     color: alpha(@selected_fg_color, 0.6);
+<<<<<<< HEAD
 }
 scale marks {
     color: alpha(@selected_fg_color, 0.3);
+=======
+    border-radius: 6px;
+}
+scale marks {
+    color: alpha(@selected_fg_color, 0.3);
+    border-radius: 6px;
+>>>>>>> f76ef18a615e1b38089343bf38ebe005b6bd12c8
 }
 scale marks.top {
     margin-bottom: 8px;

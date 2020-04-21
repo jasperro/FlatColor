@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 /* Default color scheme */
 @define-color color0 #2a232a;
@@ -20,6 +21,29 @@
 @define-color bg_color @color8;
 @define-color tooltip_bg_color shade(@color0, 1.20);
 @define-color base_color mix(@color8, @color0, 1.2);
+=======
+/* Default color scheme */
+@define-color color0 #221e17;
+@define-color color1 #96c5bc;
+@define-color color2 #0facaa;
+@define-color color3 #ab9a77;
+@define-color color4 #72c3bc;
+@define-color color5 #b6c6b9;
+@define-color color6 #45c2bf;
+@define-color color7 #c7c6c5;
+@define-color color8 #40382b;
+@define-color color9 #acffff;
+@define-color color10 #07ebe8;
+@define-color color11 #f1ce87;
+@define-color color12 #80ffff;
+@define-color color13 #d3ffe1;
+@define-color color14 #48ffff;
+@define-color color15 #fffffd;
+@define-color selected_bg_color #39cbcb;
+@define-color bg_color mix(@color0, @color15, 0.12);
+@define-color tooltip_bg_color mix(@color0, @color15, 0.04);
+@define-color base_color mix(@color0, @color15, 0);
+>>>>>>> f76ef18a615e1b38089343bf38ebe005b6bd12c8
 @define-color fg_color @color15;
 @define-color text_color @color15;
 @define-color selected_fg_color @color15;
@@ -96,6 +120,10 @@
 @import url("widgets/scrollbar.css");
 @import url("widgets/separator.css");
 @import url("widgets/sidebar.css");
+<<<<<<< HEAD
+=======
+@import url("widgets/chrome.css");
+>>>>>>> f76ef18a615e1b38089343bf38ebe005b6bd12c8
 @import url("widgets/spinbutton.css");
 @import url("widgets/spinner.css");
 @import url("widgets/switch.css");
@@ -106,4 +134,7 @@
 @import url("widgets/csd.css");
 @import url("widgets/combobox.css");
 @import url("widgets/selection-mode.css");
+<<<<<<< HEAD
 @import url("widgets/chrome.css");
+=======
+>>>>>>> f76ef18a615e1b38089343bf38ebe005b6bd12c8

@@ -3,6 +3,7 @@
  *********/
 entry {
     padding: 6px 8px;
+<<<<<<< HEAD
     border-width: 1px;
     border-style: solid;
     border-color: transparent;
@@ -10,12 +11,26 @@ entry {
     background-color: @base_color;
     background-image: none;
     color: @text_color;
+=======
+    background-color: @base_color;
+    background-image: none;
+    color: @text_color;
+    box-shadow: initial;
+    box-shadow:inset 0px -1px 0px 0px @color2;
+    border-radius: 2px;
+>>>>>>> f76ef18a615e1b38089343bf38ebe005b6bd12c8
 }
 
 entry:active,
 entry:focus {
+<<<<<<< HEAD
     box-shadow: inset 0px 0px @selected_bg_color;
 	border-color: @selected_bg_color;
+=======
+    border-color: @selected_bg_color;
+    box-shadow: inset 0px -2px 0px 0px @color12;
+    background-color: @base_color;
+>>>>>>> f76ef18a615e1b38089343bf38ebe005b6bd12c8
 }
 
 entry:selected,

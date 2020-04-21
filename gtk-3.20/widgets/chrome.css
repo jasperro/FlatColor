@@ -4,8 +4,13 @@ entry.chromium {
 }
 
 menu.chromium {
+<<<<<<< HEAD
 	background-color: @theme_bg_color;
 	color: @theme_fg_color;
+=======
+	background-color: mix(white, black, 0.05);
+	color: black;
+>>>>>>> f76ef18a615e1b38089343bf38ebe005b6bd12c8
 	border: none 0px;
 }
 
