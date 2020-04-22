@@ -2,7 +2,7 @@
  * header-bar *
  **************/
 
-.header-bar {
+headerbar {
     padding: 4px;
     border-width: 0;
     border-style: none;
@@ -10,22 +10,31 @@
 }
 
 
-.header-bar .button.text-button {
+headerbar button.text-button {
     padding: 4px;
 }
 
-.header-bar .button.image-button {
+headerbar button.image-button {
     padding: 6px;
 }
 
-.header-bar .title {
+headerbar title {
     font-weight: bold;
 }
 
-.header-bar .subtitle {
+headerbar subtitle {
     font-size: smaller;
 }
 
-.header-bar > stackswitcher > button {
-	color: blue;
+headerbar > stackswitcher > button {
+    margin-right: 1px;
+    border-radius: 0;
+}
+
+headerbar > stackswitcher > button:first-child {
+    border-radius: 3px 0 0 3px;
+}
+
+headerbar > stackswitcher > button:last-child {
+    border-radius: 0 3px 3px 0;
 }

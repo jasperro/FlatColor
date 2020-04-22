@@ -202,11 +202,4 @@ notebook > stack {
     background-color: @tooltip_bg_color;
 }
 
-notebook > stack:first-child .button.text-button {
-    margin-right: 0;
-}
-
-notebook > stack:last-child .button.text-button {
-    margin-left: 0;
-}
 /*aqui esta lo que debe modificars*/
