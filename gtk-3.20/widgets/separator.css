@@ -1,24 +1,24 @@
 /*************
  * separator *
  *************/
-.sidebar.view.separator,
-.view.separator,
-.separator {
+sidebar.view.separator,
+view.separator,
+separator {
     border-width: 0;
     border-style: none;
-    color: transparent;
+    background-color: transparent;
 }
-.separator:disabled {
-     color: transparent;
+separator:disabled {
+    background-color: transparent;
 }
-.button .separator,
-.button.separator {
+button separator,
+button.separator {
     border-width: 0;
-    color: transparent;
+    background-color: transparent;
 }
 
-.button .separator:disabled,
-.button.separator:disabled {
-    color: transparent;
+button separator:disabled,
+button.separator:disabled {
+    background-color: transparent;
     border-width: 0;
 }

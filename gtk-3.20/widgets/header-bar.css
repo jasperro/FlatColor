@@ -9,15 +9,6 @@ headerbar {
     background-color: @bg_color;
 }
 
-
-headerbar button.text-button {
-    padding: 4px;
-}
-
-headerbar button.image-button {
-    padding: 6px;
-}
-
 headerbar title {
     font-weight: bold;
 }
@@ -37,4 +28,20 @@ headerbar > stackswitcher > button:first-child {
 
 headerbar > stackswitcher > button:last-child {
     border-radius: 0 3px 3px 0;
+}
+
+headerbar > stackswitcher > button.text-button {
+    padding: 6px 20px 6px 20px;
+}
+
+headerbar > stackswitcher > button.image-button {
+    padding: 8px 22px 8px 22px;
+}
+
+headerbar button.text-button {
+    padding: 4px;
+}
+
+headerbar button.image-button {
+    padding: 6px;
 }

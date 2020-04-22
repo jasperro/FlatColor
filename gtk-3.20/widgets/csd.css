@@ -45,7 +45,7 @@
 .titlebutton {
     padding: 4px;
     border-style: none;
-    background-color: @button_normal_color;
+    /*background-color: @button_normal_color;*/
     color: mix(@fg_color, @bg_color, 0.1);
     -gtk-icon-shadow: none;
 }
@@ -120,6 +120,6 @@ GtkEventBox {
     background-color: @bg_color;
 }
 
-GtkSeparator separator .separator.vertical.titlebutton {
+/*GtkSeparator separator .separator.vertical.titlebutton {
     background-color: @selected_bg_color;
-}
+}*/
