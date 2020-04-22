@@ -9,6 +9,7 @@
     background-color: @bg_color;
 }
 
+
 .header-bar .button.text-button {
     padding: 4px;
 }
@@ -25,3 +26,6 @@
     font-size: smaller;
 }
 
+.header-bar > stackswitcher > button {
+	color: blue;
+}

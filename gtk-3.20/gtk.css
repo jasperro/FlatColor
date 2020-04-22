@@ -1,25 +1,24 @@
-
 /* Default color scheme */
-@define-color color0 #2a232a;
-@define-color color1 #BFC2B5;
-@define-color color2 #9AA6A8;
-@define-color color3 #BBC5C5;
-@define-color color4 #75D88A;
-@define-color color5 #6f959c;
-@define-color color6 #ABB6B6;
-@define-color color7 #d3efdb;
-@define-color color8 #3d333d;
-@define-color color9 #fefecd;
-@define-color color10 #b4e8f1;
-@define-color color11 #d3fefe;
-@define-color color12 #82fea6;
-@define-color color13 #86d9e8;
-@define-color color14 #c4fefe;
-@define-color color15 #eafef3;
-@define-color selected_bg_color #87afaf;
-@define-color bg_color @color8;
-@define-color tooltip_bg_color shade(@color0, 1.20);
-@define-color base_color mix(@color8, @color0, 1.2);
+@define-color color0 #24393d;
+@define-color color1 #AD7A84;
+@define-color color2 #C77D84;
+@define-color color3 #4C8993;
+@define-color color4 #67939B;
+@define-color color5 #8D9296;
+@define-color color6 #A89DA3;
+@define-color color7 #dfb9bd;
+@define-color color8 #9c8184;
+@define-color color9 #AD7A84;
+@define-color color10 #C77D84;
+@define-color color11 #4C8993;
+@define-color color12 #67939B;
+@define-color color13 #8D9296;
+@define-color color14 #A89DA3;
+@define-color color15 #dfb9bd;
+@define-color selected_bg_color #8a6169;
+@define-color bg_color mix(@color0, @color15, 0.12);
+@define-color tooltip_bg_color mix(@color0, @color15, 0.04);
+@define-color base_color mix(@color0, @color15, 0);
 @define-color fg_color @color15;
 @define-color text_color @color15;
 @define-color selected_fg_color @color15;
@@ -36,8 +35,7 @@
 @define-color theme_tooltip_fg_color @tooltip_fg_color;
 
 /* shadow effects */
-@define-color light_shadow #eeeeee;
-@define-color dark_shadow #222222;
+@define-color shadow alpha(@theme_fg_color, 0.1);
 
 /* misc colors used by gtk+ */
 @define-color info_fg_color @text_color;
@@ -96,6 +94,7 @@
 @import url("widgets/scrollbar.css");
 @import url("widgets/separator.css");
 @import url("widgets/sidebar.css");
+@import url("widgets/chrome.css");
 @import url("widgets/spinbutton.css");
 @import url("widgets/spinner.css");
 @import url("widgets/switch.css");
@@ -106,4 +105,3 @@
 @import url("widgets/csd.css");
 @import url("widgets/combobox.css");
 @import url("widgets/selection-mode.css");
-@import url("widgets/chrome.css");

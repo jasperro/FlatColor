@@ -6,10 +6,10 @@
     -GtkWidget-focus-padding: 1;
     -GtkWidget-focus-line-width: 0;
     padding: 5px;
-    border-width: 1px;
+    border-width: 2px;
     border-style: solid;
     border-color: transparent;
-    border-radius: 0px;
+    border-radius: 3px;
     background-color: shade( @theme_bg_color, 1.58 );
     background-image: none;
     color: @theme_text_color;

@@ -9,6 +9,10 @@ radio {
     margin-right: 5px;
 }
 
+check {
+    border-radius: 3px;
+}
+
 radio {
     border-radius: 10px;
 }

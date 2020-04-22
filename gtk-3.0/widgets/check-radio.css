@@ -8,6 +8,10 @@
 
 }
 
+.check {
+    border-radius: 3px;
+}
+
 GtkCheckButton:hover,
 GtkCheckButton:active:hover,
 GtkCheckButton:selected,

@@ -34,7 +34,7 @@
 }
 
 .notebook tab.top {
-
+    border-radius: 3px 3px 0 0;
 }
 
 .notebook tab.top:active {
@@ -42,7 +42,7 @@
 }
 
 .notebook tab.right {
-
+    border-radius: 0 3px 3px 0;
 }
 
 .notebook tab.right:active {
@@ -50,7 +50,7 @@
 }
 
 .notebook tab.bottom {
-
+    border-radius: 0 0 3px 3px;
 }
 
 .notebook tab.bottom:active {
@@ -58,7 +58,7 @@
 }
 
 .notebook tab.left {
-
+    border-radius: 3px 0 0 3px;
 }
 
 .notebook tab.left:active {

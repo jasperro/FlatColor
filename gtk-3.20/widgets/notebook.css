@@ -12,6 +12,7 @@ notebook > header.top {
     border-bottom-style: solid;
 }
 notebook > header.top > tabs > tab:not(.reorderable-page) {
+    border-radius: 3px 3px 0 0;
     margin-bottom: -1px;
 }
 notebook > header.top > tabs > tab:not(.reorderable-page):hover {
@@ -24,6 +25,7 @@ notebook > header.bottom {
     border-top-style: solid;
 }
 notebook > header.bottom > tabs > tab:not(.reorderable-page) {
+    border-radius: 0 0 3px 3px;
     margin-top: -1px;
 }
 notebook > header.bottom > tabs > tab:not(.reorderable-page):hover {
@@ -36,6 +38,7 @@ notebook > header.left {
     border-right-style: solid;
 }
 notebook > header.left > tabs > tab:not(.reorderable-page) {
+    border-radius: 3px 0 0 3px;
     margin-right: -1px;
 }
 notebook > header.left > tabs > tab:not(.reorderable-page):hover {
@@ -48,6 +51,7 @@ notebook > header.right {
     border-left-style: solid;
 }
 notebook > header.right > tabs > tab:not(.reorderable-page) {
+    border-radius: 0 3px 3px 0;
     margin-left: -1px;
 }
 notebook > header.right > tabs > tab:not(.reorderable-page):hover {
@@ -196,5 +200,13 @@ notebook > stack:not(:only-child) {
 
 notebook > stack {
     background-color: @tooltip_bg_color;
+}
+
+notebook > stack:first-child .button.text-button {
+    margin-right: 0;
+}
+
+notebook > stack:last-child .button.text-button {
+    margin-left: 0;
 }
 /*aqui esta lo que debe modificars*/
