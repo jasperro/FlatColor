@@ -32,7 +32,7 @@ entry:disabled {
     background-color: shade(@bg_color, 1.04);
     border-color: shade(@bg_color, 1.04);
     background-image: none;
-    color: mix(@text_color, @base_color, 0.4);
+    color: @text_color_disabled
 }
 
 entry.progressbar {

@@ -39,7 +39,7 @@
 .inline-toolbar.toolbar GtkToolButton > .button:insensitive {
     background-color: shade(@bg_color, 1.04);
     background-image: none;
-    color: mix(@text_color, @base_color, 0.4);
+    color: @text_color_disabled
 }
 
 /* remove box shadow from last-child and only-child */
@@ -173,7 +173,7 @@
 .inline-toolbar.toolbar.vertical GtkToolButton > .button:insensitive {
     background-color: shade(@bg_color, 1.04);
     background-image: none;
-    color: mix(@text_color, @base_color, 0.4);
+    color: @text_color_disabled
 }
 
 /* remove box shadow from last-child and only-child */
@@ -310,7 +310,7 @@ border-width: 1px;
 .header-bar .linked .button:insensitive {
     background-color: shade(@bg_color, 1.04);
     background-image: none;
-    color: mix(@text_color, @base_color, 0.4);
+    color: @text_color_disabled
 }
 
 /* remove box shadow from last-child and only-child */

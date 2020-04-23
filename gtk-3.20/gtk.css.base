@@ -21,6 +21,7 @@
 @define-color base_color mix(@color0, @color15, 0);
 @define-color fg_color @color15;
 @define-color text_color @color15;
+@define-color text_color_disabled mix(@text_color, @base_color, 0.4);
 @define-color selected_fg_color @color15;
 @define-color tooltip_fg_color @color15;
 

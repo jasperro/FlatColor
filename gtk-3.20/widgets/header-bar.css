@@ -31,11 +31,11 @@ headerbar > stackswitcher > button:last-child {
 }
 
 headerbar > stackswitcher > button.text-button {
-    padding: 6px 20px 6px 20px;
+    padding: 4px 20px 4px 20px;
 }
 
 headerbar > stackswitcher > button.image-button {
-    padding: 8px 22px 8px 22px;
+    padding: 6px 22px 6px 22px;
 }
 
 headerbar button.text-button {
