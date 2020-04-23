@@ -2,13 +2,6 @@
  * use 4 spaces indents, and keep code ALIGNED and ORDERED */
 /* default */
 
-
-@keyframes ripple_effect {
-    to {
-        background-size: 1000% 1000%;
-    }
-}
-
 * {
     background-clip: padding-box;
     -GtkArrow-arrow-scaling: 0.55;
@@ -280,19 +273,19 @@ GtkHTML {
  *********/
 
 frame {
-    border-radius: 0;
+    border-radius: 3px;
 }
 
 frame.border-groove,
 frame.border-ridge {
-    border-radius: 0;
+    border-radius: 3px;
     border-width: 0px;
     border-style: none;
 }
 
 frame.border-groove border,
 frame.border-ridge border {
-    border-radius: 0;
+    border-radius: 3px;
     border-width: 3px;
     border-style: solid;
     border-color: shade(@theme_bg_color, 0.9);
@@ -303,7 +296,7 @@ frame.border-ridge border {
  *******************/
 
 scrolledwindow.frame {
-    border-radius: 0;
+    border-radius: 3px;
     border-width: 0;
     border-style: none;
 }
@@ -328,7 +321,6 @@ GtkIconView.view.cell:selected:focus {
     border-width: 3px;
     border-style: solid;
     border-color: @theme_selected_bg_color;
-    border-radius: 0;
     background-color: @theme_selected_bg_color;
     background-image: none;
     color: @theme_selected_fg_color;
@@ -340,7 +332,6 @@ GtkIconView.view.cell:selected:focus {
     border-width: 1px;
     border-style: solid;
     border-color: shade(@theme_selected_bg_color, 0.9);
-    border-radius: 0;
     background-color: alpha(@theme_selected_bg_color, 0.3);
 }
 
@@ -392,7 +383,6 @@ GtkLabel:disabled {
 .floating-bar {
     border-width: 3px;
     border-style: none;
-    border-radius: 0px;
     background-color: @theme_bg_color;
     background-image: none;
     color: @theme_fg_color;
@@ -641,7 +631,6 @@ treeview.view {
 treeview.view:hover,
 treeview.view:active,
 treeview.view:selected {
-    border-radius: 0;
 }
 
 treeview.view.separator {
@@ -728,7 +717,6 @@ treeview.view header button {
     border-style: none solid solid none;
     border-width: 1px;
     border-color: rgba(0, 0, 0, 0.1);
-    border-radius: 0;
     background-clip: border-box;
 }
 
@@ -753,7 +741,6 @@ treeview.view header.button.dnd {
     border-style: none solid solid;
     border-width: 1px;
     border-color: rgba(0, 0, 0, 0.1);
-    border-radius: 0;
     box-shadow: none;
     background-color: @theme_bg_color;
     background-clip: border-box;
@@ -793,7 +780,6 @@ GtkViewport.frame {
 .app-notification {
     border-style: none;
     border-width: 0 1px 1px 1px;
-    border-radius: 0;
     padding: 8px;
     background-color: @theme_base_color;
     background-image: none;
@@ -808,7 +794,6 @@ GtkViewport.frame {
     border-width: 1px;
     border-style: solid;
     border-color: transparent;
-    border-radius: 0;
     background-color: @error_color;
     background-image: none;
     color: mix(@theme_selected_fg_color, @error_color, 0.1);
@@ -868,7 +853,6 @@ list.row:checked {
 
 GtkBubbleWindow {
     background-color: @theme_tooltip_bg_color;
-    border-radius: 0;
     background-clip: border-box;
     padding: 10px;
 }
@@ -898,7 +882,6 @@ decoration:backdrop {
 
 .fullscreen decoration,
 .tiled decoration {
-    border-radius: 0;
 }
 
 .popup decoration {
@@ -925,7 +908,6 @@ messagedialog.csd decoration {
 
 .solid-csd decoration {
     margin: 4px;
-    border-radius: 0;
     box-shadow: none;
     background-color: @theme_tooltip_bg_color;
 }

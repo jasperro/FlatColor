@@ -2,31 +2,31 @@
 
 gtk-color-scheme = "bg_color:#131971
 color0:#131971
-color1:#5E6EDD
-color2:#8579C5
-color3:#7A84DF
-color4:#8F91D6
-color5:#9E9BDE
-color6:#AEB0EA
+color1:#9E9BDE
+color2:#8F91D6
+color3:#AEB0EA
+color4:#5E6EDD
+color5:#8579C5
+color6:#7A84DF
 color7:#d8cadf
-color8:#978d9c
-color9:#5E6EDD
-color10:#8579C5
-color11:#7A84DF
-color12:#8F91D6
-color13:#9E9BDE
-color14:#AEB0EA
-color15:#d8cadf
-text_color:#d8cadf
-selected_bg_color:#6169b2
-selected_fg_color:#d8cadf
+color8:#19229c
+color9:#b7b1ff
+color10:#a2a6ff
+color11:#c0c4ff
+color12:#657fff
+color13:#9e88ff
+color14:#8899ff
+color15:#fff2ff
+text_color:#fff2ff
+selected_bg_color:#7e6ccb
+selected_fg_color:#fff2ff
 tooltip_bg_color:#131971
-tooltip_fg_color:#d8cadf
+tooltip_fg_color:#fff2ff
 titlebar_bg_color:#131971
-titlebar_fg_color:#d8cadf
+titlebar_fg_color:#fff2ff
 menu_bg_color:#131971
-menu_fg_color:#d8cadf
-link_color:#6169b2"
+menu_fg_color:#fff2ff
+link_color:#7e6ccb"
 gtk-auto-mnemonics	= 1
 
 # Default Style
